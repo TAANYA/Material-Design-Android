@@ -1,6 +1,9 @@
 package com.example.tanya.material_design1;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -20,7 +23,6 @@ public class MainActivity extends AppCompatActivity
     ListView listView;
     Toolbar toolbar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -39,12 +41,6 @@ public class MainActivity extends AppCompatActivity
 
         listView = (ListView)findViewById(R.id.listview);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        if(getSupportActionBar() != null)
-        {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
 
         ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(),R.layout.listview_layout,list);
         listView.setAdapter(adapter);

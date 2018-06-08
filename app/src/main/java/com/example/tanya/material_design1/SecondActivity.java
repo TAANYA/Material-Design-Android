@@ -7,8 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toolbar;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +25,7 @@ public class SecondActivity extends AppCompatActivity
         viewPager = (ViewPager)findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         tabLayout.setupWithViewPager(viewPager);
+
     }
 
     private void setupViewPager(ViewPager viewPager) {

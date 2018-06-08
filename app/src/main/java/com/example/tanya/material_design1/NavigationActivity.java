@@ -123,7 +123,9 @@ public class NavigationActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_slideshow)
+        {
+            startActivity(new Intent(this,ExpandableListActivity.class));
 
         } else if (id == R.id.nav_manage) {
 
